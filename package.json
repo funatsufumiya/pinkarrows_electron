@@ -23,6 +23,9 @@
     "win": {
       "icon": "assets/logo_256.png",
       "target": "nsis"
+    },
+    "mac": {
+      "icon": "assets/logo_512.png"
     }
   },
   "scripts": {
