@@ -1,0 +1,38 @@
+{
+  "name": "pinkarrows_electron",
+  "version": "1.0.0",
+  "description": "Pink Arrows is a lightweight, web-based annotation tool. Hosted version at [pinkarrows.app](https://pinkarrows.app) with no installation required.",
+  "homepage": "https://github.com/funatsufumiya/pinkarrows_electron#readme",
+  "bugs": {
+    "url": "https://github.com/funatsufumiya/pinkarrows_electron/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funatsufumiya/pinkarrows_electron.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.js",
+  "build": {
+    "appId": "app.pinkarrows",
+    "productName": "PinkArrows",
+    "directories": {
+      "output": "dist_electron"
+    },
+    "win": {
+      "icon": "assets/logo_256.png",
+      "target": "nsis"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "build_win": "electron-builder --win --x64",
+    "build_mac": "electron-builder --mac",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^39.2.7",
+    "electron-builder": "^26.0.12"
+  }
+}
